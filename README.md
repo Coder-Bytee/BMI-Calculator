@@ -1,2 +1,5 @@
 # BMI-Calculator
-This is a small project which checks the BMI of Individual and gives result accordingly
+<ul>
+  <li>This is a small project which checks the BMI of Individual and gives result accordingly.</li>
+  <li> It also specifies the BMI Range and Category Chart for Reference. </li>
+</ul>

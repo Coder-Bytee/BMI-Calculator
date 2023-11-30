@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="wrapper-container" id="blur">
+    <div class="container">
+      <h1>BMI Calculator</h1>
+      <div class="input-container">
+        <p>Height:</p>
+        <div class="input-box">
+          <p>
+            <input type="text" maxlength="1" id="feet" placeholder="Feet" max="1" max="10" />
+            <label for="feet">Feet</label>
+          </p>
+          <p>
+            <input type="text" maxlength="2" id="inches" value="0" />
+            <label for="inches">Inches</label>
+          </p>
+        </div>
+        <div class="input-box">
+          <input type="number" name="" id="weight" placeholder="Weight" />
+          <label for="kgs">Kgs</label>
+        </div>
+      </div>
+      <button class="calculate-btn" id="calculate">Calculate</button>
+      <button class="link-btn" id="pop-up-box">
+        View BMI range and category chart
+      </button>
+      <div class="result-container" id="result-container"></div>
+    </div>
+  </div>
+  <div class="table-container" id="pop-up">
+    <button id="close-btn" class="close-btn">X</button>
+    <h2>BMI RANGE AND CATEGORY CHART</h2>
+    <h3>BMI table for adults</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>CATEGORY</th>
+          <th>BMI RANGE kg/m2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Underweight</td>
+          <td>&lt;18.5</td>
+        </tr>
+        <tr>
+          <td>Normal Weight</td>
+          <td>18.5 - 24.9</td>
+        </tr>
+        <tr>
+          <td>Overweight</td>
+          <td>25 - 29.9</td>
+        </tr>
+        <tr>
+          <td>Obese</td>
+          <td>>30</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>

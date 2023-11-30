@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mooli&display=swap');
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #7b76ff;
+}
+.wrapper-container
+{
+    width:40%;
+    margin:5vh auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.wrapper-container .container h1
+{
+    font-size: 1.5rem;
+}
+.wrapper-container .container
+{
+
+    padding:3rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap:1.5rem;
+    border-radius:0.6rem;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-container .container .input-container
+{
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    width: 100%;
+}
+.wrapper-container .container .input-container .input-box 
+{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+    margin-bottom:1rem;
+    width: 100%;
+}
+.wrapper-container .container .input-container .input-box p
+{
+    text-align: center;
+}
+.wrapper-container .container .input-container input
+{
+    padding:1rem;
+    width:95%;
+    border:1px solid #c1c1c1;
+    border-radius:0.5rem;
+
+
+}
+.wrapper-container .container h1
+{
+    text-align: center;
+}
+.wrapper-container .container .calculate-btn
+{
+    padding:0.8rem 1rem;
+    width:8rem;
+   
+    background-color: #544eff;
+    color:#fff;
+    border:none;
+    border-radius:0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}.wrapper-container .container .result-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+ .wrapper-container .container .result-container h3
+ {
+    font-size: 16px;
+    font-weight: 500;
+ }
+ .wrapper-container .container .result-container .result,.result-text{
+    font-weight: 900;
+    font-size:28px;
+
+ }
+ .link-btn
+ {
+    cursor: pointer;
+    background-color: #fff;
+    color:#1866b3;
+    font-weight: 900;
+    border:none;
+ }
+.table-container
+{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:2rem;   
+    gap:1rem;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    width:30%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    box-shadow: 0 5px 30px  rgba(0,0,0,0.5);
+
+
+}
+#pop-up.active
+{
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    /* background: rgba(0,0,0,0.5); */
+}
+.table-container h2
+{
+ color:#544eff;
+ font-size: 18px;   
+margin-bottom:0.5rem;
+}
+.table-container h3{
+    font-size: 14px;
+}
+.table-container table thead tr 
+{
+    background-color: #544eff;
+    color:#fff;
+    text-align: left;
+}
+.table-container table tbody tr td,th
+{
+    padding:0.3rem;
+}
+.table-container table tbody tr:nth-child(even)
+{
+    background-color: #938fff;
+    color:#fff;
+}
+.table-container .close-btn
+{
+    position: absolute;
+    top:1.5rem;
+    right:1rem;
+    padding:0.3rem;
+    border: none;
+    background-color: #fff;
+    font-weight: 900;
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+.wrapper-container#blur.active
+{
+filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+    background-color: #c1c1c1;
+}
+ @media screen and (max-width:1000px) {
+
+    .wrapper-container
+    {
+        width: 70%;
+    }
+ }
+ @media screen and (max-width:768px) {
+
+    .wrapper-container
+    {
+        width: 80%;
+        margin-top:1vh;
+    }
+ }
+ @media screen and (max-width:390px) {
+
+    .wrapper-container
+    {
+        width: 90%;
+        margin-top:1vh;
+    }
+ } @media screen and (max-width:1000px) {
+
+    .table-container
+    {
+        width: 50%;
+    }
+ }
+ @media screen and (max-width:768px) {
+
+    .table-container
+    {
+        width: 70%;
+    }
+ }
+ @media screen and (max-width:390px) {
+
+    .table-container
+    {
+        width: 95%;
+    }
+ }
